@@ -21,21 +21,46 @@
             no_cdn: false
         }, function (err, dashboard) {
 
-            myapp.dashboard = dashboard;
+            cdb.$('#red').click(function() {
+              cdb.$('.CDB-Dashboard-menuInner').css({'background':'#f24440'});
+              cdb.$('.CDB-Widget').css({'background-color':'#f24440', 'color': 'white', 'border-radius': '25px'});
+              cdb.$('.u-secondaryTextColor').css({'color': 'white'});
+              cdb.$('.CDB-Dashboard-canvas').css({'background': 'white'});
+              cdb.$('.CDB-Chart-bar').css({'fill':'white'});
+              cdb.$('.CDB-Widget-progressState').css({'background-color': 'white'});
+              cdb.$('.u-actionTextColor, a').css({'color': 'white'});
+              cdb.$('.CDB-Size-large').css({'font-weight': 'bold'});
+              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': 'white'});
+              console.log('RIP Emilio (x2)')
 
-            // DI map
-            myapp.map = dashboard.getMap();
+            });
 
-            // CARTO map to add layers and so
-            myapp.Cmap = myapp.map.map;
+            cdb.$('#dark').click(function() {
+              cdb.$('.CDB-Dashboard-menuInner').css({'background':'black'});
+              cdb.$('.CDB-Widget').css({'background-color':'black', 'color': 'white', 'border-radius': '25px'});
+              cdb.$('.u-secondaryTextColor').css({'color': 'white'});
+              cdb.$('.CDB-Dashboard-canvas').css({'background': 'gray'});
+              cdb.$('.CDB-Chart-bar').css({'fill':'white'});
+              cdb.$('.CDB-Widget-progressState').css({'background-color': 'white'});
+              cdb.$('.u-actionTextColor, a').css({'color': 'white'});
+              cdb.$('.CDB-Size-large').css({'font-weight': 'bold'});
+              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': 'white'});
+              console.log('RIP Emilio')
 
-            // CARTO layers
-            myapp.layers = myapp.map.getLayers();
+            });
 
-
-            // Array of widgets views
-            myapp.widgets = dashboard.getWidgets();
-
+            cdb.$('#default').click(function() {
+              cdb.$('.CDB-Dashboard-menuInner').css({'background':''});
+              cdb.$('.CDB-Widget').css({'background-color':'', 'color': '', 'border-radius': ''});
+              cdb.$('.u-secondaryTextColor').css({'color': ''});
+              cdb.$('.CDB-Dashboard-canvas').css({'background': ''});
+              cdb.$('.CDB-Chart-bar').css({'fill':''});
+              cdb.$('.CDB-Widget-progressState').css({'background-color': ''});
+              cdb.$('.u-actionTextColor, a').css({'color': ''});
+              cdb.$('.CDB-Size-large').css({'font-weight': ''});
+              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': ''});
+              console.log('Emilio breaths')
+            });
 
 
         });
