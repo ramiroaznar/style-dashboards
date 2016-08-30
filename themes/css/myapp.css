@@ -1,0 +1,48 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    overflow: hidden;
+}
+
+/* general styles for the widgets */
+.CDB-Widget{
+	background-color: black;
+	color:#FFF;
+	border-radius: 25px;
+}
+
+/* general styles for the small numbers */
+.u-secondaryTextColor{
+	color: white !important;
+}
+
+.CDB-Dashboard-canvas{
+	background: gray !important;
+}
+
+/* styles for the bars of the widgets */
+.CDB-Chart-bar  {
+	fill: white !important;
+}
+.CDB-Widget-progressState{
+	background-color: white !important;
+}
+
+/* styles for the widgets searchbars */
+.u-actionTextColor, a{
+	color: white !important;
+}
+
+/* styles for the dashboard sidebar */
+.CDB-Dashboard-menuInner{
+	background: black !important;
+}
+
+/* styles for widgets text titles */
+.CDB-Size-large{
+	font-weight: bold !important;
+}
