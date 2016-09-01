@@ -23,7 +23,7 @@
 
             cdb.$('#red').click(function() {
               cdb.$('.CDB-Dashboard-menuInner').css({'background':'#f24440'});
-              cdb.$('.CDB-Widget').css({'background-color':'#f24440', 'color': 'white', 'border-radius': '25px'});
+              cdb.$('.CDB-Widget').css({'background-color':'#f24440', 'color': 'white'});
               cdb.$('.u-secondaryTextColor').css({'color': 'white'});
               cdb.$('.CDB-Dashboard-canvas').css({'background': 'white'});
               cdb.$('.CDB-Chart-bar').css({'fill':'white'});
@@ -37,7 +37,7 @@
 
             cdb.$('#dark').click(function() {
               cdb.$('.CDB-Dashboard-menuInner').css({'background':'black'});
-              cdb.$('.CDB-Widget').css({'background-color':'black', 'color': 'white', 'border-radius': '25px'});
+              cdb.$('.CDB-Widget').css({'background-color':'black', 'color': 'white'});
               cdb.$('.u-secondaryTextColor').css({'color': 'white'});
               cdb.$('.CDB-Dashboard-canvas').css({'background': 'gray'});
               cdb.$('.CDB-Chart-bar').css({'fill':'white'});
@@ -51,7 +51,7 @@
 
             cdb.$('#default').click(function() {
               cdb.$('.CDB-Dashboard-menuInner').css({'background':''});
-              cdb.$('.CDB-Widget').css({'background-color':'', 'color': '', 'border-radius': ''});
+              cdb.$('.CDB-Widget').css({'background-color':'', 'color': ''});
               cdb.$('.u-secondaryTextColor').css({'color': ''});
               cdb.$('.CDB-Dashboard-canvas').css({'background': ''});
               cdb.$('.CDB-Chart-bar').css({'fill':''});
