@@ -31,22 +31,17 @@
               cdb.$('.u-actionTextColor, a').css({'color': 'white'});
               cdb.$('.CDB-Size-large').css({'font-weight': 'bold'});
               cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': 'white'});
-              console.log('RIP Emilio (x2)')
 
             });
 
             cdb.$('#dark').click(function() {
-              cdb.$('.CDB-Dashboard-menuInner').css({'background':'black'});
-              cdb.$('.CDB-Widget').css({'background-color':'black', 'color': 'white'});
+              cdb.$('.CDB-Dashboard-menuInner').css({'background':'#2e3c43'});
+              cdb.$('.CDB-Widget').css({'background-color':'#2e3c43', 'color': 'white'});
               cdb.$('.u-secondaryTextColor').css({'color': 'white'});
-              cdb.$('.CDB-Dashboard-canvas').css({'background': 'gray'});
-              cdb.$('.CDB-Chart-bar').css({'fill':'white'});
-              cdb.$('.CDB-Widget-progressState').css({'background-color': 'white'});
-              cdb.$('.u-actionTextColor, a').css({'color': 'white'});
-              cdb.$('.CDB-Size-large').css({'font-weight': 'bold'});
-              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': 'white'});
-              console.log('RIP Emilio')
-
+              cdb.$('.CDB-Dashboard-canvas').css({'background': '#282c2f'});
+              cdb.$('.js-textInfo').css({'color': '#979ea1'});
+              cdb.$('.CDB-Shape-threePoints').removeClass('is-blue').addClass('is-white');
+              cdb.$('.CDB-Widget--light .CDB-Widget-progressBar').css({'background': '#414D54'});
             });
 
             cdb.$('#default').click(function() {
@@ -58,8 +53,8 @@
               cdb.$('.CDB-Widget-progressState').css({'background-color': ''});
               cdb.$('.u-actionTextColor, a').css({'color': ''});
               cdb.$('.CDB-Size-large').css({'font-weight': ''});
-              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': ''});
-              console.log('Emilio breaths')
+              cdb.$('.CDB-Chart-axis CDB-Text CDB-Size-small').css({'color': '!important white'});
+
             });
 
 
